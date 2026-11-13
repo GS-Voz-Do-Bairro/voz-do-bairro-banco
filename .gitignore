@@ -1,0 +1,11 @@
+# saídas locais (SPOOL / prints)
+*.log
+# SO / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Notas internas e sobras
+NOTAS-REVISAO.md
+evidencias.zip

@@ -1,0 +1,239 @@
+PS C:\dev\GS-VozDoBairro\voz-do-bairro-banco\scripts\mongodb> & "$env:LOCALAPPDATA\Programs\mongosh\mongosh.exe" "mongodb://localhost:27017" --file 02_consultas.js
+
+==================== R1 - Abertas do Capão Redondo por apoios ====================
+{
+  oracleId: 1,
+  titulo: 'Iluminação na Rua Agnaldo Macedo',
+  categoria: 'SEGURANCA',
+  metaApoios: 30,
+  totalApoios: 7,
+  autor: {
+    nome: 'Maria Cidadã'
+  }
+}
+{
+  oracleId: 2,
+  titulo: 'Faixa de pedestre em frente à EMEF',
+  categoria: 'MOBILIDADE',
+  metaApoios: 30,
+  totalApoios: 5,
+  autor: {
+    nome: 'João Vizinho'
+  }
+}
+{
+  oracleId: 18,
+  titulo: 'Academia ao ar livre no Parque Santo Dias',
+  categoria: 'LAZER',
+  metaApoios: 30,
+  totalApoios: 2,
+  autor: {
+    nome: 'Ana Paula Ribeiro'
+  }
+}
+
+==================== R2 - Demandas atrasadas ====================
+{
+  oracleId: 4,
+  titulo: 'UBS do Capão Redondo aberta aos sábados',
+  totalApoios: 10,
+  bairro: {
+    nome: 'Capão Redondo'
+  },
+  prazoResposta: ISODate('2026-11-03T03:48:46.859Z')
+}
+{
+  oracleId: 9,
+  titulo: 'Cobertura nos pontos de ônibus da Av. Jacu-Pêssego',
+  totalApoios: 11,
+  bairro: {
+    nome: 'Itaquera'
+  },
+  prazoResposta: ISODate('2026-11-08T08:36:46.859Z')
+}
+
+==================== R3 - Placar por bairro ====================
+{
+  bairro: 'Vila Mariana',
+  total: 3,
+  ABERTA: 1,
+  DEMANDA: 1,
+  ATRASADA: 0,
+  EM_EXECUCAO: 0,
+  RECUSADA: 1,
+  CONCLUIDA: 0,
+  totalApoios: 25,
+  bairroId: 1,
+  subprefeitura: 'Vila Mariana'
+}
+{
+  bairro: 'Capão Redondo',
+  total: 6,
+  ABERTA: 3,
+  DEMANDA: 1,
+  ATRASADA: 1,
+  EM_EXECUCAO: 1,
+  RECUSADA: 0,
+  CONCLUIDA: 0,
+  totalApoios: 41,
+  bairroId: 2,
+  subprefeitura: 'Campo Limpo'
+}
+{
+  bairro: 'Itaquera',
+  total: 3,
+  ABERTA: 1,
+  DEMANDA: 0,
+  ATRASADA: 1,
+  EM_EXECUCAO: 0,
+  RECUSADA: 0,
+  CONCLUIDA: 1,
+  totalApoios: 26,
+  bairroId: 3,
+  subprefeitura: 'Itaquera'
+}
+{
+  bairro: 'Brasilândia',
+  total: 3,
+  ABERTA: 1,
+  DEMANDA: 1,
+  ATRASADA: 0,
+  EM_EXECUCAO: 1,
+  RECUSADA: 0,
+  CONCLUIDA: 0,
+  totalApoios: 23,
+  bairroId: 4,
+  subprefeitura: 'Freguesia/Brasilândia'
+}
+{
+  bairro: 'Grajaú',
+  total: 2,
+  ABERTA: 0,
+  DEMANDA: 0,
+  ATRASADA: 0,
+  EM_EXECUCAO: 0,
+  RECUSADA: 1,
+  CONCLUIDA: 1,
+  totalApoios: 16,
+  bairroId: 5,
+  subprefeitura: 'Capela do Socorro'
+}
+{
+  bairro: 'Mooca',
+  total: 1,
+  ABERTA: 1,
+  DEMANDA: 0,
+  ATRASADA: 0,
+  EM_EXECUCAO: 0,
+  RECUSADA: 0,
+  CONCLUIDA: 0,
+  totalApoios: 2,
+  bairroId: 6,
+  subprefeitura: 'Mooca'
+}
+
+==================== R4 - Top categorias por apoios ====================
+{
+  propostas: 4,
+  totalApoios: 35,
+  apoiosRegistrados: 35,
+  categoria: 'MOBILIDADE'
+}
+{
+  propostas: 3,
+  totalApoios: 27,
+  apoiosRegistrados: 27,
+  categoria: 'SEGURANCA'
+}
+{
+  propostas: 2,
+  totalApoios: 20,
+  apoiosRegistrados: 20,
+  categoria: 'SAUDE'
+}
+{
+  propostas: 3,
+  totalApoios: 19,
+  apoiosRegistrados: 19,
+  categoria: 'LAZER'
+}
+{
+  propostas: 3,
+  totalApoios: 13,
+  apoiosRegistrados: 13,
+  categoria: 'MEIO_AMBIENTE'
+}
+{
+  propostas: 2,
+  totalApoios: 10,
+  apoiosRegistrados: 10,
+  categoria: 'ZELADORIA'
+}
+{
+  propostas: 1,
+  totalApoios: 9,
+  apoiosRegistrados: 9,
+  categoria: 'EDUCACAO'
+}
+
+==================== R5 - Taxa de resposta no prazo por bairro ====================
+{
+  bairroId: 1,
+  bairro: 'Vila Mariana',
+  avaliaveis: 1,
+  noPrazo: 1,
+  taxa: 100,
+  snapshotCarga: 100
+}
+{
+  bairroId: 2,
+  bairro: 'Capão Redondo',
+  avaliaveis: 2,
+  noPrazo: 1,
+  taxa: 50,
+  snapshotCarga: 50
+}
+{
+  bairroId: 3,
+  bairro: 'Itaquera',
+  avaliaveis: 2,
+  noPrazo: 1,
+  taxa: 50,
+  snapshotCarga: 50
+}
+{
+  bairroId: 4,
+  bairro: 'Brasilândia',
+  avaliaveis: 1,
+  noPrazo: 0,
+  taxa: 0,
+  snapshotCarga: 0
+}
+{
+  bairroId: 5,
+  bairro: 'Grajaú',
+  avaliaveis: 2,
+  noPrazo: 1,
+  taxa: 50,
+  snapshotCarga: 50
+}
+{
+  bairroId: 6,
+  bairro: 'Mooca',
+  avaliaveis: 0,
+  noPrazo: 0,
+  taxa: null,
+  snapshotCarga: null
+}
+
+==================== R6 - Conferência totalApoios x apoios embutidos (esperado: lista vazia) ====================
+[]
+
+==================== R6b - Totais por collection (comparar com 02_dados.sql) ====================
+{
+  propostas: 18,
+  apoios: 133,
+  comentarios: 15,
+  respostas: 6
+}
+bairros: 6
